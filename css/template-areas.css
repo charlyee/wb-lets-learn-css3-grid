@@ -43,14 +43,29 @@ body {
     body {
         grid-template-columns:
             calc( 100% / 3 ) /* One third! */
-            calc( ( 100% / 3 ) / 2 ) /* Half of one third... */
-            calc( ( 100% / 3 ) / 2 ) /* Half of one third... */
+            calc( 100% / 6 ) /* Half of one third... */
+            calc( 100% / 6 ) /* Half of one third... */
             calc( 100% / 3 ); /* One third! */
-        grid-template-rows: 35vw 35vw 35vw;
+        grid-template-rows: 35vw 35vw 35vw; /* Use auto, with real content, unless you're sure of a specific size! */
         grid-template-areas:
             "hero hero hero hero"
             "first-service second-service second-service third-service"
             "other-links other-links copyright-info copyright-info";
+    }
+
+    /* Let's try positioning... */
+    .first-service,
+    .second-service,
+    .third-service {
+        width: 50%; /* Percent is based on available cell space! */
+        height: 50%; /* Percent is based on available cell space! */
+        justify-self: center; /* Horizontal position (start, center, end.) */
+        align-self: center; /* Vertical position (start, center, end.) */
+    }
+
+    .second-service { /* Slightly bigger, this one will stand out! */
+        width: 75%;
+        height: 75%;
     }
 
 }
