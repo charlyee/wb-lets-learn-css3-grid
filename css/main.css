@@ -72,3 +72,6 @@
 #links {
     grid-column: span 2;
 }
+
+/* Visuals (Ignore) */
+*{font-family:Arial,Helvetica,sans-serif;list-style:none;}#css-grid>*{color:#fff;padding:5%;}#logo,#info{background:lightsalmon;}#navigation,#links{color:darkgray;background:khaki;}#search,#address{background:palegreen;}#sidebar{background:cornflowerblue;}#content-1{background:plum;}#content-2{color:darkgray;background:antiquewhite;}#content-3{background:peru;}#big-content-1{background:silver;}#big-content-2{background:#5d8aa8;}#copyright,#hero{background:#a4c639;}
